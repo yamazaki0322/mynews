@@ -16,14 +16,14 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('news/create', 'Admin\NewController@add');
+    Route::get('news/create', 'Admin\NewsController@add');
 });
 
 /* 課題３*/
-Route::get('XXX', 'bbb\AAAController@add');
+Route::get('XXX', 'AAAController@bbb');
 
 /* 課題 4 */
-Route::group(['prefix' => 'Admin'], function() {
+Route::group(['prefix' => 'admin'], function() {
     Route::get('profile/create', 'Admin\ProfileController@add');
     Route::get('profile/edit', 'Admin\ProfileController@edit');
 });
