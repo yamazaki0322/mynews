@@ -27,7 +27,6 @@ class ProfileController extends Controller
     public function update(Request $request)
     {
         $this->validate($request, Profile::$rules);
-        \Debugbar::info($request->id);
         $profile = Profile::find($request->id);
         $profile_form = $request->all();
         unset($profile_form['token']);
