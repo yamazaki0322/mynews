@@ -35,6 +35,12 @@
                            <input type="radio" name="gender" value="female">女性
                        </div>
     　　</div>
+    　　<div class="form-group row">
+         <label class="col-md-2">年齢</label>
+          <div class="col-md-2">
+         <input type="text" class="form-control" name="age" value="{{ old('age') }}">
+          </div>
+        </div>
     　　 <div class="form-group row">
                         <label class="col-md-2">趣味</label>
                         
